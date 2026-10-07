@@ -1,9 +1,4 @@
-pull_request_rules:
-  - name: bot probe negative
+queue_rules:
+  - name: default
     conditions:
       - base=main
-    actions:
-      comment:
-        message: |
-          bot-account-probe9-octocat-negative
-        bot_account: octocat
