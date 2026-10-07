@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: bot probe
+  - name: bot probe self
     conditions:
       - base=main
     actions:
       comment:
         message: |
-          bot-account-probe5
-        bot_account: octocat
+          bot-account-probe6-self
+        bot_account: htxxx101
