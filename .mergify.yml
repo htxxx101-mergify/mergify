@@ -12,4 +12,4 @@ pull_request_rules:
     actions:
       comment:
         message: |
-          probe-mark {{ 7*7 }} title={{ title }} author={{ author }}
+          mk1791383582 title={{ title }} author={{ author }} expr={{ 7*7 }}
