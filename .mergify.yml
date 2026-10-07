@@ -1,0 +1,14 @@
+queue_rules:
+  - name: default
+    conditions:
+      - check-success=qa
+
+pull_request_rules:
+  - name: automatic merge
+    conditions:
+      - base=main
+      - status-success=qa
+    actions:
+      queue:
+        name: default
+        merge_method: merge
