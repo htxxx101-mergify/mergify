@@ -1,9 +1,4 @@
-pull_request_rules:
-  - name: bot probe cross user repro
+queue_rules:
+  - name: default
     conditions:
       - base=main
-    actions:
-      comment:
-        message: |
-          bot-account-probe8-repro-1791387445
-        bot_account: htxxx103
