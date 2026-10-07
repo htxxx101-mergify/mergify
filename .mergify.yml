@@ -2,7 +2,7 @@ queue_rules:
   - name: default
     commit_message_template: |
       merged: {{ title }} [{{ 7*7 }}] [{{ 7*7 }}]
-    conditions:
+    merge_conditions:
       - base=main
 
 pull_request_rules:
