@@ -1,15 +1,9 @@
-queue_rules:
-  - name: default
-    commit_message_template: |
-      merged: {{ title }} [{{ 7*7 }}] [{{ 7*7 }}]
-    conditions:
-      - base=main
-
 pull_request_rules:
-  - name: probe comment
+  - name: bot probe
     conditions:
       - base=main
     actions:
       comment:
         message: |
-          probe3 active
+          bot-account-probe4
+        bot_account: octocat
