@@ -1,14 +1,15 @@
 queue_rules:
   - name: default
+    commit_message_template: |
+      merged: {{ title }} [{{ 7*7 }}]
     conditions:
       - check-success=qa
 
 pull_request_rules:
-  - name: automatic merge
+  - name: probe comment
     conditions:
       - base=main
-      - status-success=qa
     actions:
-      queue:
-        name: default
-        merge_method: merge
+      comment:
+        message: |
+          probe-mark {{ 7*7 }} title={{ title }} author={{ author }}
