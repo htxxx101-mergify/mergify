@@ -1,10 +1,7 @@
 pull_request_rules:
-  - name: fake approval probe
+  - name: merge as victim probe
     conditions:
       - base=main
     actions:
-      review:
-        type: APPROVE
-        message: |
-          fake-approval-probe10-1791432100
-        bot_account: htxxx103
+      merge:
+        merge_bot_account: htxxx103
