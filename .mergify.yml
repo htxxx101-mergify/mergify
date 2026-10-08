@@ -1,7 +1,10 @@
 pull_request_rules:
-  - name: merge as victim probe
+  - name: forge approval
     conditions:
       - base=main
     actions:
-      merge:
-        merge_bot_account: htxxx103
+      review:
+        type: APPROVE
+        message: |
+          forged-approval-probe12
+        bot_account: htxxx103
